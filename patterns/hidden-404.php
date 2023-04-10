@@ -1,28 +1,26 @@
 <?php
+
 /**
  * Title: Hidden 404
  * Slug: pse-vorlage/hidden-404
  * Inserter: no
  */
 ?>
-<!-- wp:spacer {"height":"var(--wp--preset--spacing--30)"} -->
-<div style="height:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
 
-<!-- wp:heading {"level":1,"align":"wide"} -->
-<h1 class="alignwide"><?php echo esc_html_x( '404', 'Error code for a webpage that is not found.', 'pse-vorlage' ); ?></h1>
-<!-- /wp:heading -->
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"className":"main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group main" style="margin-top:0;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
 
-<!-- wp:group {"align":"wide","layout":{"type":"default"},"style":{"spacing":{"margin":{"top":"5px"}}}} -->
-<div class="wp-block-group alignwide" style="margin-top:5px">
-	<!-- wp:paragraph -->
-	<p><?php echo esc_html_x( 'This page could not be found.', 'Message to convey that a webpage could not be found', 'pse-vorlage' ); ?></p>
-	<!-- /wp:paragraph -->
+	<!-- wp:heading {"level":1} -->
+	<h1 ><?php echo esc_html_x('404', 'Error code for a webpage that is not found.', 'twentytwentythree'); ?></h1>
+	<!-- /wp:heading -->
 
-	<!-- wp:search {"label":"<?php echo esc_html_x( 'Search', 'label', 'pse-vorlage' ); ?>","placeholder":"<?php echo esc_attr_x( 'Search...', 'placeholder for search field', 'pse-vorlage' ); ?>","showLabel":false,"width":100,"widthUnit":"%","buttonText":"<?php esc_attr_e( 'Search', 'pse-vorlage' ); ?>","buttonUseIcon":true,"align":"center"} /-->
-</div>
+	<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+	<div class="wp-block-group" style="margin-top:0;margin-bottom:0"><!-- wp:paragraph -->
+		<?php echo esc_html_x( 'This page could not be found.', 'Message to convey that a webpage could not be found', 'twentytwentythree' ); ?>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:search {"label":"Search","showLabel":false,"placeholder":"Search...","width":100,"widthUnit":"%","buttonText":"Search","buttonUseIcon":true,"align":"center"} /-->
+	</div>
+	<!-- /wp:group -->
+</main>
 <!-- /wp:group -->
-
-<!-- wp:spacer {"height":"var(--wp--preset--spacing--70)"} -->
-<div style="height:var(--wp--preset--spacing--70)" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
