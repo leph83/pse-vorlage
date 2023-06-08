@@ -21,18 +21,18 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 \*------------------------------------*/
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
+    html {
+        scroll-behavior: auto;
+    }
 }
 
 body {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 /*------------------------------------*\

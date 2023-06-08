@@ -196,9 +196,7 @@
 			},
 			"h5": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--medium)",
-					"fontWeight": "700",
-					"textTransform": "uppercase"
+					"fontSize": "var(--wp--preset--font-size--medium)"
 				}
 			},
 			"h6": {
@@ -218,6 +216,11 @@
 			"fontFamily": "var(--wp--preset--font-family--system-font)",
 			"fontSize": "var(--wp--preset--font-size--medium)",
 			"lineHeight": "1.5"
+		},
+		"blocks": {
+			"core/media-text": {
+				"css": "{\n\tgap: var(--wp--preset--spacing--60);\n}\n\n& .wp-block-media-text__content {\n\tpadding: 0;\n}" 
+			}
 		}
 	}
 }
