@@ -32,23 +32,23 @@
 				},
 				{
 					"color": "#7c0202",
-					"name": "Tertiary",
-					"slug": "tertiary"
+					"name": "Third",
+					"slug": "third"
 				},
 				{
 					"color": "#141414",
-					"name": "Dark Grey",
-					"slug": "darkgrey"
+					"name": "Fourth",
+					"slug": "fourth"
 				},
 				{
 					"color": "#212121",
-					"name": "Mid Gray",
-					"slug": "midgray"
+					"name": "Fifth",
+					"slug": "fifth"
 				},
 				{
 					"color": "#c4c4c4",
-					"name": "Light Gray",
-					"slug": "lightgray"
+					"name": "Sixth",
+					"slug": "sixth"
 				}
 			]
 		},
