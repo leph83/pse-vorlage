@@ -31,58 +31,48 @@
 					"slug": "secondary"
 				},
 				{
-					"color": "#7c0202",
-					"name": "Third",
-					"slug": "third"
-				},
-				{
-					"color": "#141414",
-					"name": "Fourth",
-					"slug": "fourth"
-				},
-				{
-					"color": "#212121",
-					"name": "Fifth",
-					"slug": "fifth"
-				},
-				{
-					"color": "#c4c4c4",
-					"name": "Sixth",
-					"slug": "sixth"
+					"color": "#F6F6F6",
+					"name": "Tertiary",
+					"slug": "tertiary"
 				}
 			]
 		},
 		"spacing": {
 			"spacingSizes": [
 				{
-					"size": "var(--wp--preset--font-size--small)",
-					"slug": "30",
+					"size": "calc(var(--wp--preset--font-size--medium) / 4)",
+					"slug": "10",
 					"name": "1"
 				},
 				{
-					"size": "var(--wp--preset--font-size--medium)",
-					"slug": "40",
+					"size": "calc(var(--wp--preset--font-size--medium) / 2)",
+					"slug": "20",
 					"name": "2"
 				},
 				{
-					"size": "var(--wp--preset--font-size--large)",
-					"slug": "50",
+					"size": "var(--wp--preset--font-size--medium)",
+					"slug": "30",
 					"name": "3"
 				},
 				{
-					"size": "var(--wp--preset--font-size--x-large)",
-					"slug": "60",
+					"size": "calc(var(--wp--preset--font-size--medium) * 2)",
+					"slug": "40",
 					"name": "4"
 				},
 				{
-					"size": "var(--wp--preset--font-size--xx-large)",
-					"slug": "70",
+					"size": "calc(var(--wp--preset--font-size--medium) * 3)",
+					"slug": "50",
 					"name": "5"
 				},
 				{
-					"size": "var(--wp--preset--font-size--xxx-large)",
-					"slug": "80",
+					"size": "calc(var(--wp--preset--font-size--medium) * 4)",
+					"slug": "60",
 					"name": "6"
+				},
+				{
+					"size": "calc(var(--wp--preset--font-size--medium) * 5)",
+					"slug": "70",
+					"name": "7"
 				}
 			],
 			"units": [
@@ -96,29 +86,7 @@
 		},
 		"typography": {
 			"fluid": true,
-			"fontFamilies": [
-				{
-					"fontFamily": "\"Helvetica Neue\", \"Helvetica\", \"Arial Nova\", \"Arial\", \"Liberation Sans\", sans-serif",
-					"name": "System Font",
-					"slug": "system-font"
-				},
-				{
-					"fontFace": [
-						{
-							"fontFamily": "Goldplay Light",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "100",
-							"src": [
-								"file:./assets/fonts/goldplay-light/goldplay-w5-light.woff2"
-							]
-						}
-					],
-					"fontFamily": "\"Goldplay Light\", sans-serif",
-					"name": "Goldplay Light",
-					"slug": "goldplay-light"
-				}
-			],
+			"fontFamilies": [],
 			"fontSizes": [
 				{
 					"fluid": {
@@ -203,6 +171,12 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}
+			},
+			"heading": {
+				"typography": {
+					"fontWeight": "400",
+					"lineHeight": "1.333"
+				}
 			}
 		},
 		"spacing": {
@@ -213,13 +187,12 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--system-font)",
 			"fontSize": "var(--wp--preset--font-size--medium)",
 			"lineHeight": "1.5"
 		},
 		"blocks": {
 			"core/media-text": {
-				"css": "{\n\tgap: var(--wp--preset--spacing--60);\n}\n\n& .wp-block-media-text__content {\n\tpadding: 0;\n}" 
+				"css": "{\n\tgap: var(--wp--preset--spacing--40);\n}\n\n& .wp-block-media-text__content {\n\tpadding: 0;\n}"
 			}
 		}
 	}
