@@ -32,25 +32,11 @@ function pse_styles()
 }
 add_action('wp_enqueue_scripts', 'pse_styles');
 
-
-
 /**
- * Add theme support.
+ * Add style.css to admin
  */
-function pse_setup()
-{
-	/*
-	 * Load additional block styles.
-	 */
-	$styled_blocks = [];
-	foreach ($styled_blocks as $block_name) {
-		$args = array(
-			'handle' => "phuc-$block_name",
-			'src'    => get_theme_file_uri("assets/css/blocks/$block_name.css"),
-			'path'   => get_theme_file_path("assets/css/blocks/$block_name.css"),
-		);
-		// Replace the "core" prefix if you are styling blocks from plugins.
-		wp_enqueue_block_style("core/$block_name", $args);
-	}
+function load_admin_style() {
+    wp_enqueue_style( 'style', get_stylesheet_uri(), false, '1.0.0' );
 }
-add_action('after_setup_theme', 'pse_setup');
+add_action( 'admin_enqueue_scripts', 'load_admin_style' );
+
