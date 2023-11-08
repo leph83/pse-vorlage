@@ -40,3 +40,16 @@ function load_admin_style() {
 }
 add_action( 'admin_enqueue_scripts', 'load_admin_style' );
 
+/**
+ * Register Block Styles
+ */
+function pse_register_block_styles() {
+	register_block_style(
+        'core/group',
+        array(
+            'name' => 'custom',
+            'label' => __( 'custom', 'pse-vorlage' )
+		)
+    );
+}
+add_action( 'init', 'pse_register_block_styles' );

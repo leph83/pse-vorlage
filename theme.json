@@ -213,7 +213,7 @@
 		},
 		"blocks": {
 			"core/media-text": {
-				"css": "{gap: var(--wp--preset--spacing--40);} & .wp-block-media-text__content {padding: 0;}"
+				"css": "{column-gap: var(--wp--preset--spacing--30);row-gap: var(--wp--preset--spacing--20);} & .wp-block-media-text__content {padding: 0;}"
 			},
 			"core/site-title": {
 				"css": "& a {text-decoration: none;}"
