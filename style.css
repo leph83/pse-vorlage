@@ -69,10 +69,6 @@ body {
     top: 0;
 }
 
-/* .admin-bar .layout--border::before {
-    top: 32px;
-} */
-
 .layout--border::after {
     bottom: 0;
 }
