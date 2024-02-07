@@ -41,12 +41,22 @@ body {
     z-index: 9999;
 }
 
+.header--sticky {
+    position: sticky;
+    top: 0;
+}
+
 /*------------------------------------*\
    HEADER
 \*------------------------------------*/
 .header--absolute {
     position: absolute;
     z-index: 8888;
+    width: 100%;
+}
+
+.header--fixed {
+    position: fixed;
     width: 100%;
 }
 
